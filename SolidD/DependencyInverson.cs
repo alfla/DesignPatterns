@@ -17,7 +17,12 @@ namespace SolidD
         public string Name;
     }
 
-    public class Relationships
+    public interface IRelationshipBrowser
+    {
+        IEnumerable<Person> FindAllChildrenOf(string name);
+    }
+
+    public class Relationships : IRelationshipBrowser
     {
         private List<(Person, Relationship, Person)> relations = new List<(Person, Relationship, Person)>();
 
@@ -27,24 +32,41 @@ namespace SolidD
             relations.Add((child, Relationship.Child, parent));
         }
 
-        public List<(Person, Relationship, Person)> Relations => relations;
+        public IEnumerable<Person> FindAllChildrenOf(string name)
+        {
+            //foreach (var r in relations.Where(
+            //                                x => x.Item1.Name == name &&
+            //                                     x.Item2 == Relationship.Parent))
+            //{
+            //    yield return r.Item3;
+            //}
+
+            return relations.Where(x => x.Item1.Name == name &&
+                                     x.Item2 == Relationship.Parent).Select(r => r.Item3);
+        }
+
+        //public List<(Person, Relationship, Person)> Relations => relations;
     }
 
     public class DependencyInverson
     {
-        public DependencyInverson(Relationships relationships)
+        //public DependencyInverson(Relationships relationships)
+        //{
+        //    var relations = relationships.Relations;
+        //    foreach (var r in relations.Where(
+        //                                    x => x.Item1.Name == "John" &&
+        //                                         x.Item2 == Relationship.Parent))
+        //    {
+        //        WriteLine($"John has a child called {r.Item3.Name}");
+        //    }
+        //}
+
+        public DependencyInverson(IRelationshipBrowser browser)
         {
-            var relations = relationships.Relations;
-            foreach (var r in relations.Where(
-                                            x => x.Item1.Name == "John" &&
-                                                 x.Item2 == Relationship.Parent))
-            {
-                WriteLine($"John has a child called {r.Item3.Name}");
-                
-            }
-
+            foreach (var p in browser.FindAllChildrenOf("John"))
+                WriteLine($"John has a child called {p.Name}");
         }
-
+        
         static void Main(string[] args)
         {
             Person parent = new Person { Name = "John" };
