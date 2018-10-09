@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidS", "SolidS\SolidS.csproj", "{4ACC2251-E90F-481D-9B8A-908BCF67A104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidS", "SolidS\SolidS.csproj", "{4ACC2251-E90F-481D-9B8A-908BCF67A104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidO", "SolidO\SolidO.csproj", "{F6002AD5-2407-4A4F-A46F-10569362C2F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidO", "SolidO\SolidO.csproj", "{F6002AD5-2407-4A4F-A46F-10569362C2F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidL", "SolidL\SolidL.csproj", "{BBA60973-C1F6-4386-886E-A8B820337DA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F6002AD5-2407-4A4F-A46F-10569362C2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6002AD5-2407-4A4F-A46F-10569362C2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6002AD5-2407-4A4F-A46F-10569362C2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA60973-C1F6-4386-886E-A8B820337DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA60973-C1F6-4386-886E-A8B820337DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA60973-C1F6-4386-886E-A8B820337DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA60973-C1F6-4386-886E-A8B820337DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
