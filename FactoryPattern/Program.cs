@@ -2,16 +2,8 @@
 
 namespace FactoryPattern
 {
-    public class Point
+    public static class PointFactory
     {
-        public enum CoordinateSystem
-        {
-            Cartesian,
-            Polar
-        }
-
-        private double x, y;
-
         public static Point NewCartesianPoint(double x, double y)
         {
             return new Point(x, y);
@@ -21,7 +13,17 @@ namespace FactoryPattern
             return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
         }
 
-        private Point(double x, double y)
+    }
+
+    public class Point
+    {
+        public enum CoordinateSystem
+        {
+            Cartesian,
+            Polar
+        }
+        private double x, y;
+        public Point(double x, double y)
         {
             this.x = x;
             this.y = y;
@@ -39,8 +41,8 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Point pointCartesian = Point.NewCartesianPoint(1.0, Math.PI /2);
-            Point pointPolar = Point.NewPolarPoint(1.0, Math.PI / 2);
+            Point pointCartesian = PointFactory.NewCartesianPoint(1.0, Math.PI /2);
+            Point pointPolar = PointFactory.NewPolarPoint(1.0, Math.PI / 2);
 
             Console.WriteLine($"{nameof(pointCartesian)}: {pointCartesian}");
             Console.WriteLine($"{nameof(pointPolar)}: {pointPolar}");
