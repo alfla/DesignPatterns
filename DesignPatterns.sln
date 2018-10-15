@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "BuilderPa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderInheritance", "BuilderInheritance\BuilderInheritance.csproj", "{A91EC7AA-0FBE-414E-8C89-90493E3DF198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacetedBuilder", "FacetedBuilder\FacetedBuilder.csproj", "{84A3A54A-1FBA-4C3E-AA1C-310DD973D764}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacetedBuilder", "FacetedBuilder\FacetedBuilder.csproj", "{84A3A54A-1FBA-4C3E-AA1C-310DD973D764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{E131D9FC-3600-47D0-82A9-4DBB644B494F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise", "Exercise\Exercise.csproj", "{E131D9FC-3600-47D0-82A9-4DBB644B494F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +73,7 @@ Global
 		{7DB579BE-D626-4FE0-8987-65744426968C} = {54319A4B-D59E-48EC-A27F-ADD00A5B0E91}
 		{A91EC7AA-0FBE-414E-8C89-90493E3DF198} = {54319A4B-D59E-48EC-A27F-ADD00A5B0E91}
 		{84A3A54A-1FBA-4C3E-AA1C-310DD973D764} = {54319A4B-D59E-48EC-A27F-ADD00A5B0E91}
+		{E131D9FC-3600-47D0-82A9-4DBB644B494F} = {54319A4B-D59E-48EC-A27F-ADD00A5B0E91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
