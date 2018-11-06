@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{C84F3E26-F91A-4655-A506-3D75BBD5856E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetwork", "NeuralNetwork\NeuralNetwork.csproj", "{37B901B8-1796-460B-8C07-86A38F35865B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{C84F3E26-F91A-4655-A506-3D75BBD5856E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C84F3E26-F91A-4655-A506-3D75BBD5856E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C84F3E26-F91A-4655-A506-3D75BBD5856E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B901B8-1796-460B-8C07-86A38F35865B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B901B8-1796-460B-8C07-86A38F35865B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B901B8-1796-460B-8C07-86A38F35865B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B901B8-1796-460B-8C07-86A38F35865B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +162,7 @@ Global
 		{355844E1-6B7C-4939-9F03-635360762FC2} = {06F7430A-34D1-471C-A74D-F14962F2B79B}
 		{F93A0F31-434C-4B8C-8F0D-A01EE48ECF45} = {4D8E4D16-996C-48C4-8CE2-5A1A2242B27C}
 		{C84F3E26-F91A-4655-A506-3D75BBD5856E} = {BACBFDCB-25AF-4499-AF94-CDFEA49C19E8}
+		{37B901B8-1796-460B-8C07-86A38F35865B} = {BACBFDCB-25AF-4499-AF94-CDFEA49C19E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
