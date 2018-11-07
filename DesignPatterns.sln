@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{E5E0381E-26D2-4CC6-86A3-33655E35D408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter-Decorator", "Adapter-Decorator\Adapter-Decorator.csproj", "{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{E5E0381E-26D2-4CC6-86A3-33655E35D408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5E0381E-26D2-4CC6-86A3-33655E35D408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5E0381E-26D2-4CC6-86A3-33655E35D408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +178,7 @@ Global
 		{C84F3E26-F91A-4655-A506-3D75BBD5856E} = {BACBFDCB-25AF-4499-AF94-CDFEA49C19E8}
 		{37B901B8-1796-460B-8C07-86A38F35865B} = {BACBFDCB-25AF-4499-AF94-CDFEA49C19E8}
 		{E5E0381E-26D2-4CC6-86A3-33655E35D408} = {FAEED9EE-D75E-428E-92F2-469D51B7573C}
+		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C} = {FAEED9EE-D75E-428E-92F2-469D51B7573C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
