@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "Decorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter-Decorator", "Adapter-Decorator\Adapter-Decorator.csproj", "{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleInheritance", "MultipleInheritance\MultipleInheritance.csproj", "{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,6 +185,7 @@ Global
 		{37B901B8-1796-460B-8C07-86A38F35865B} = {BACBFDCB-25AF-4499-AF94-CDFEA49C19E8}
 		{E5E0381E-26D2-4CC6-86A3-33655E35D408} = {FAEED9EE-D75E-428E-92F2-469D51B7573C}
 		{FA6AB1B8-5DF2-4228-8DE9-4F72A43ADD9C} = {FAEED9EE-D75E-428E-92F2-469D51B7573C}
+		{1A28864A-1F3D-4BFC-AB81-8C91CF3AD166} = {FAEED9EE-D75E-428E-92F2-469D51B7573C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
