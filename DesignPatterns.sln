@@ -87,6 +87,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResposibility", "ChainOfResposibility\ChainOfResposibility.csproj", "{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerChain", "BrokerChain\BrokerChain.csproj", "{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +219,10 @@ Global
 		{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,6 +254,7 @@ Global
 		{508C8D05-D90E-4546-A345-AC46A7BB24B5} = {E2B28E10-2711-49C3-81B0-267D2011D30F}
 		{F2633686-1549-49B7-B750-BB264DA687DE} = {E2B28E10-2711-49C3-81B0-267D2011D30F}
 		{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C} = {2C9F2D0F-D357-4566-8A31-5B154CA6D194}
+		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C} = {2C9F2D0F-D357-4566-8A31-5B154CA6D194}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
