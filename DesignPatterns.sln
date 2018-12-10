@@ -85,13 +85,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProxyForLogging", "D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{2C9F2D0F-D357-4566-8A31-5B154CA6D194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResposibility", "ChainOfResposibility\ChainOfResposibility.csproj", "{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResposibility", "ChainOfResposibility\ChainOfResposibility.csproj", "{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerChain", "BrokerChain\BrokerChain.csproj", "{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerChain", "BrokerChain\BrokerChain.csproj", "{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{575CF5C4-9675-4827-9C67-D0532140E174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{E942A863-363F-4E19-B3C1-F3653A5DA83D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{E942A863-363F-4E19-B3C1-F3653A5DA83D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreter", "Interpreter", "{0E95245B-C265-4926-A33B-3EC2ABAE3528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandMadeInterpreterLexing", "HandMadeInterpreterLexing\HandMadeInterpreterLexing.csproj", "{6D62C468-D643-49A6-9E3F-9E0818344B67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +235,10 @@ Global
 		{E942A863-363F-4E19-B3C1-F3653A5DA83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E942A863-363F-4E19-B3C1-F3653A5DA83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E942A863-363F-4E19-B3C1-F3653A5DA83D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D62C468-D643-49A6-9E3F-9E0818344B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D62C468-D643-49A6-9E3F-9E0818344B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D62C468-D643-49A6-9E3F-9E0818344B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D62C468-D643-49A6-9E3F-9E0818344B67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -264,6 +272,7 @@ Global
 		{1181C6F0-3B22-4CF2-82C8-E9B1FF40CD2C} = {2C9F2D0F-D357-4566-8A31-5B154CA6D194}
 		{99E58E1D-2B3E-4DB0-BD04-E26A8E97AB5C} = {2C9F2D0F-D357-4566-8A31-5B154CA6D194}
 		{E942A863-363F-4E19-B3C1-F3653A5DA83D} = {575CF5C4-9675-4827-9C67-D0532140E174}
+		{6D62C468-D643-49A6-9E3F-9E0818344B67} = {0E95245B-C265-4926-A33B-3EC2ABAE3528}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
