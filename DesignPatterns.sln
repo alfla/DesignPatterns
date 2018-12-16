@@ -99,11 +99,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeInterpreterLexing",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iterator", "Iterator", "{FE630AD4-0F48-4939-A87B-189D05FC71FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorObject", "IteratorObject\IteratorObject.csproj", "{91DBA4D9-076B-42D8-AAFF-7F661C8C4F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorObject", "IteratorObject\IteratorObject.csproj", "{91DBA4D9-076B-42D8-AAFF-7F661C8C4F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorDucktyping", "IteratorDucktyping\IteratorDucktyping.csproj", "{B3D22912-9E2D-4CB4-84F0-83A59409D06D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorDucktyping", "IteratorDucktyping\IteratorDucktyping.csproj", "{B3D22912-9E2D-4CB4-84F0-83A59409D06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayBackend", "ArrayBackend\ArrayBackend.csproj", "{DA5836AF-48C4-4F02-9F1D-400607B66951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayBackend", "ArrayBackend\ArrayBackend.csproj", "{DA5836AF-48C4-4F02-9F1D-400607B66951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{8F29FBB7-ACFE-4E62-93BB-8E10453E41FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRoom", "ChatRoom\ChatRoom.csproj", "{7E57E0EF-9359-48FB-A771-B9690222B716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBroker", "EventBroker\EventBroker.csproj", "{6F7DE3A0-967F-4940-96B6-9E186A096D04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -259,6 +265,14 @@ Global
 		{DA5836AF-48C4-4F02-9F1D-400607B66951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA5836AF-48C4-4F02-9F1D-400607B66951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA5836AF-48C4-4F02-9F1D-400607B66951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E57E0EF-9359-48FB-A771-B9690222B716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E57E0EF-9359-48FB-A771-B9690222B716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E57E0EF-9359-48FB-A771-B9690222B716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E57E0EF-9359-48FB-A771-B9690222B716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7DE3A0-967F-4940-96B6-9E186A096D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7DE3A0-967F-4940-96B6-9E186A096D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7DE3A0-967F-4940-96B6-9E186A096D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7DE3A0-967F-4940-96B6-9E186A096D04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -296,6 +310,8 @@ Global
 		{91DBA4D9-076B-42D8-AAFF-7F661C8C4F48} = {FE630AD4-0F48-4939-A87B-189D05FC71FA}
 		{B3D22912-9E2D-4CB4-84F0-83A59409D06D} = {FE630AD4-0F48-4939-A87B-189D05FC71FA}
 		{DA5836AF-48C4-4F02-9F1D-400607B66951} = {FE630AD4-0F48-4939-A87B-189D05FC71FA}
+		{7E57E0EF-9359-48FB-A771-B9690222B716} = {8F29FBB7-ACFE-4E62-93BB-8E10453E41FC}
+		{6F7DE3A0-967F-4940-96B6-9E186A096D04} = {8F29FBB7-ACFE-4E62-93BB-8E10453E41FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
