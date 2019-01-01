@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Collections.Generic;
+using static System.Console;
 
 namespace MementoPattern
 {
@@ -15,20 +16,54 @@ namespace MementoPattern
     public class BanckAccount
     {
         private int balance;
+        private List<Memento> changes = new List<Memento>();
+        private int current;
         public BanckAccount(int balance)
         {
             this.balance = balance;
+            changes.Add(new Memento(balance));
         }
 
         public Memento Deposit(int amount)
         {
             balance += amount;
-            return new Memento(balance);
+            var m= new Memento(balance);
+            changes.Add(m);
+            ++current;
+            return m;
         }
 
-        public void Restore(Memento m)
+        public Memento Restore(Memento m)
         {
-            balance = m.Balance;
+            if(m != null)
+            {
+                balance = m.Balance;
+                changes.Add(m);
+                return m;
+            }
+            return null;
+        }
+
+        public Memento Undo()
+        {
+            if(current > 0)
+            {
+                var m = changes[--current];
+                balance = m.Balance;
+                return m;
+            }
+            return null;
+        }
+
+        public Memento Redo()
+        {
+            if (current + 1 < changes.Count)
+            {
+                var m = changes[++current];
+                balance = m.Balance;
+                return m;
+            }
+            return null;
         }
 
         public override string ToString()
@@ -42,18 +77,18 @@ namespace MementoPattern
         static void Main(string[] args)
         {
             var ba = new BanckAccount(100);
-            var m1 = ba.Deposit(50);//150
-            var m2 = ba.Deposit(25);//175
-
-            WriteLine(ba);
-
-            ba.Restore(m1);
-            WriteLine(ba);
-            ba.Restore(m2);
+            ba.Deposit(50);//150
+            ba.Deposit(25);//175
             WriteLine(ba);
 
 
-            WriteLine("Hello World!");
+            ba.Undo();
+            WriteLine($"Undo 1: {ba}");
+            ba.Undo();
+            WriteLine($"Undo 2: {ba}");
+            ba.Redo();
+            WriteLine($"Redo 1: {ba}");
+            
             ReadKey();
         }
     }
