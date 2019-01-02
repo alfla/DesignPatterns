@@ -9,15 +9,13 @@ namespace ObservablePropertiesSequence
 {
     public class Market
     {
-        private List<float> prices = new List<float>();
+        public BindingList<float> Prices = new BindingList<float>();
 
         public void AddPrice(float price)
         {
-            prices.Add(price);
-            PriceAdded?.Invoke(this, price);
+            Prices.Add(price);
         }
 
-        public event EventHandler<float> PriceAdded;
     }
 
     class Program
@@ -25,11 +23,14 @@ namespace ObservablePropertiesSequence
         static void Main(string[] args)
         {
             var market = new Market();
-            market.PriceAdded += (sender, f) =>
+            market.Prices.ListChanged += (sender, eventArgs) =>
             {
-                WriteLine($"We got a price of {f}");
+                if (eventArgs.ListChangedType == ListChangedType.ItemAdded)
+                {
+                    float price = ((BindingList<float>)sender)[eventArgs.NewIndex];
+                    WriteLine($"Binding list got a price of {price}");
+                }
             };
-
             market.AddPrice(123);
             ReadKey();
         }
