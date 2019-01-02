@@ -13,12 +13,12 @@ namespace MementoPattern
         }
 
     }
-    public class BanckAccount
+    public class BankAccount
     {
         private int balance;
         private List<Memento> changes = new List<Memento>();
         private int current;
-        public BanckAccount(int balance)
+        public BankAccount(int balance)
         {
             this.balance = balance;
             changes.Add(new Memento(balance));
@@ -76,7 +76,7 @@ namespace MementoPattern
     {
         static void Main(string[] args)
         {
-            var ba = new BanckAccount(100);
+            var ba = new BankAccount(100);
             ba.Deposit(50);//150
             ba.Deposit(25);//175
             WriteLine(ba);
