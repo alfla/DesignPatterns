@@ -1,33 +1,23 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using static System.Console;
 
 namespace ObservablePropertiesSequence
 {
-    public class Market : INotifyPropertyChanged
+    public class Market
     {
-        private float volatility;
+        private List<float> prices = new List<float>();
 
-        public float Volatility
+        public void AddPrice(float price)
         {
-            get => volatility;
-            set
-            {
-                if (value.Equals(volatility)) return;
-                volatility = value;
-                OnPropertyChanged();
-            }
+            prices.Add(price);
+            PriceAdded?.Invoke(this, price);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        public event EventHandler<float> PriceAdded;
     }
 
     class Program
@@ -35,14 +25,12 @@ namespace ObservablePropertiesSequence
         static void Main(string[] args)
         {
             var market = new Market();
-            market.PropertyChanged += (sender, EventArgs) =>
+            market.PriceAdded += (sender, f) =>
             {
-                if(EventArgs.PropertyName == "Volatility")
-                {
+                WriteLine($"We got a price of {f}");
+            };
 
-                }
-            }
-            WriteLine("Hello World!");
+            market.AddPrice(123);
             ReadKey();
         }
     }
