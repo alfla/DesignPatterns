@@ -49,7 +49,7 @@ namespace SwitchBasedStateMachine
                         return;
                 }
             }
-            WriteLine("Hello World!");
+            
         }
     }
 }

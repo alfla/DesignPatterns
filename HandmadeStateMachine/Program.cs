@@ -74,8 +74,6 @@ namespace HandmadeStateMachine
 
             }
 
-            Console.WriteLine("Hello World!");
-            ReadKey();
         }
     }
 }

@@ -129,9 +129,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObservablePropertiesSequenc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{AF00951A-3A6E-4DF9-8B04-C545D3AE6B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandmadeStateMachine", "HandmadeStateMachine\HandmadeStateMachine.csproj", "{13CB817F-EC68-40EC-B265-3D634BC7969F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeStateMachine", "HandmadeStateMachine\HandmadeStateMachine.csproj", "{13CB817F-EC68-40EC-B265-3D634BC7969F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchBasedStateMachine", "SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchBasedStateMachine", "SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineWithStateless", "StateMachineWithStateless\StateMachineWithStateless.csproj", "{8F44243B-EB09-44B7-9661-4F8FA12EA328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -323,6 +325,10 @@ Global
 		{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F44243B-EB09-44B7-9661-4F8FA12EA328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F44243B-EB09-44B7-9661-4F8FA12EA328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F44243B-EB09-44B7-9661-4F8FA12EA328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F44243B-EB09-44B7-9661-4F8FA12EA328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +375,7 @@ Global
 		{214A3820-85F0-4176-B4F9-038735204053} = {11836CA8-B3CB-44BD-93ED-82D9687B8BD2}
 		{13CB817F-EC68-40EC-B265-3D634BC7969F} = {AF00951A-3A6E-4DF9-8B04-C545D3AE6B46}
 		{C6DB9DAD-284C-42BF-A936-30E21C69D2EC} = {AF00951A-3A6E-4DF9-8B04-C545D3AE6B46}
+		{8F44243B-EB09-44B7-9661-4F8FA12EA328} = {AF00951A-3A6E-4DF9-8B04-C545D3AE6B46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
