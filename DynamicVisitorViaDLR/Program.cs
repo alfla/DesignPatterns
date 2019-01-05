@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Console;
 
-namespace IntrusiveExpressionPrinting
+
+namespace DynamicVisitorViaDLR
 {
 
     public abstract class Expression
     {
-        public abstract void Print(StringBuilder sb);
     }
 
     public class DoubleExpression : Expression
@@ -20,34 +20,38 @@ namespace IntrusiveExpressionPrinting
             this.value = value;
         }
 
-        public override void Print(StringBuilder sb)
-        {
-            sb.Append(value);
-        }
+
     }
 
     public class AdditionExpression : Expression
     {
-        public Expression left, right;
+        public Expression Left, Right;
 
         public AdditionExpression(Expression left, Expression right)
         {
-            this.left = left ?? throw new ArgumentNullException(paramName: nameof(left));
-            this.right = right ?? throw new ArgumentNullException(paramName: nameof(right));
+            this.Left = left ?? throw new ArgumentNullException(paramName: nameof(left));
+            this.Right = right ?? throw new ArgumentNullException(paramName: nameof(right));
         }
 
-        public override void Print(StringBuilder sb)
-        {
-            sb.Append("(");
-            left.Print(sb);
-            sb.Append("+");
-            right.Print(sb);
-            sb.Append(")");
-        }
     }
 
+    public class ExpressionPrinter
+    {
+        public void Print(AdditionExpression ae, StringBuilder sb)
+        {
+            sb.Append("(");
+            Print((dynamic)ae.Left, sb);
+            sb.Append("+");
+            Print((dynamic)ae.Right, sb);
+            sb.Append(")");
+        }
 
+        public void Print(DoubleExpression de, StringBuilder sb)
+        {
+            sb.Append(de.value);
+        }
 
+    }
 
 
     class Program
@@ -61,8 +65,13 @@ namespace IntrusiveExpressionPrinting
                     new DoubleExpression(3)
                     ));
             var sb = new StringBuilder();
-            e.Print(sb);
-            WriteLine(sb);
+            var ep = new ExpressionPrinter();
+
+            ep.Print((dynamic)e,sb);
+
+
+            WriteLine(sb.ToString());
+
             ReadKey();
             WriteLine("Hello World!");
         }

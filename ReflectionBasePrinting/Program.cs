@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using static System.Console;
-
-namespace IntrusiveExpressionPrinting
+namespace ReflectionBasePrinting
 {
 
     public abstract class Expression
     {
-        public abstract void Print(StringBuilder sb);
     }
 
     public class DoubleExpression : Expression
@@ -18,11 +16,6 @@ namespace IntrusiveExpressionPrinting
         public DoubleExpression(double value)
         {
             this.value = value;
-        }
-
-        public override void Print(StringBuilder sb)
-        {
-            sb.Append(value);
         }
     }
 
@@ -35,20 +28,27 @@ namespace IntrusiveExpressionPrinting
             this.left = left ?? throw new ArgumentNullException(paramName: nameof(left));
             this.right = right ?? throw new ArgumentNullException(paramName: nameof(right));
         }
-
-        public override void Print(StringBuilder sb)
-        {
-            sb.Append("(");
-            left.Print(sb);
-            sb.Append("+");
-            right.Print(sb);
-            sb.Append(")");
-        }
     }
 
+    public static class ExpressionPrinter
+    {
 
-
-
+        public static void Print(Expression e, StringBuilder sb)
+        {
+            if (e is DoubleExpression de)
+            {
+                sb.Append(de.value);
+            }
+            else if (e is AdditionExpression ae)
+            {
+                sb.Append("(");
+                Print(ae.left, sb);
+                sb.Append("+");
+                Print(ae.right, sb);
+                sb.Append(")");
+            }
+        }
+    }
 
     class Program
     {
@@ -61,7 +61,7 @@ namespace IntrusiveExpressionPrinting
                     new DoubleExpression(3)
                     ));
             var sb = new StringBuilder();
-            e.Print(sb);
+            ExpressionPrinter.Print(e, sb);
             WriteLine(sb);
             ReadKey();
             WriteLine("Hello World!");
