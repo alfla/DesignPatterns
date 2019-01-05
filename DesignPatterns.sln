@@ -133,13 +133,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeStateMachine", "Han
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchBasedStateMachine", "SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{C6DB9DAD-284C-42BF-A936-30E21C69D2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineWithStateless", "StateMachineWithStateless\StateMachineWithStateless.csproj", "{8F44243B-EB09-44B7-9661-4F8FA12EA328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateMachineWithStateless", "StateMachineWithStateless\StateMachineWithStateless.csproj", "{8F44243B-EB09-44B7-9661-4F8FA12EA328}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{26B0F1E4-04FB-4404-A8D8-3793442C0EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamycStrategy", "DinamycStrategy\DinamycStrategy.csproj", "{02D367DA-A6CB-47A4-ADC7-05717DF98D12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DinamycStrategy", "DinamycStrategy\DinamycStrategy.csproj", "{02D367DA-A6CB-47A4-ADC7-05717DF98D12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticStrategy", "StaticStrategy\StaticStrategy.csproj", "{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticStrategy", "StaticStrategy\StaticStrategy.csproj", "{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{2DC6BA3C-9A93-4EDC-8C34-D764C233A704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatePattern", "TemplatePattern\TemplatePattern.csproj", "{91A40764-D1D3-4BCB-9F97-35F4B80C04C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visitor", "Visitor", "{E466C698-4117-4A22-9931-C38B657D8596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntrusiveExpressionPrinting", "IntrusiveExpressionPrinting\IntrusiveExpressionPrinting.csproj", "{7598C260-29A4-40A1-8F6C-61683ED6E038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -343,6 +351,14 @@ Global
 		{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A40764-D1D3-4BCB-9F97-35F4B80C04C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A40764-D1D3-4BCB-9F97-35F4B80C04C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A40764-D1D3-4BCB-9F97-35F4B80C04C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A40764-D1D3-4BCB-9F97-35F4B80C04C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7598C260-29A4-40A1-8F6C-61683ED6E038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7598C260-29A4-40A1-8F6C-61683ED6E038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7598C260-29A4-40A1-8F6C-61683ED6E038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7598C260-29A4-40A1-8F6C-61683ED6E038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -392,6 +408,8 @@ Global
 		{8F44243B-EB09-44B7-9661-4F8FA12EA328} = {AF00951A-3A6E-4DF9-8B04-C545D3AE6B46}
 		{02D367DA-A6CB-47A4-ADC7-05717DF98D12} = {26B0F1E4-04FB-4404-A8D8-3793442C0EB1}
 		{9DC92AB4-BB31-493F-B7C8-DEF5BDABC631} = {26B0F1E4-04FB-4404-A8D8-3793442C0EB1}
+		{91A40764-D1D3-4BCB-9F97-35F4B80C04C4} = {2DC6BA3C-9A93-4EDC-8C34-D764C233A704}
+		{7598C260-29A4-40A1-8F6C-61683ED6E038} = {E466C698-4117-4A22-9931-C38B657D8596}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6ED2CC-5FE8-4230-BA2D-478A4FD8426B}
